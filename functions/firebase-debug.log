@@ -1,0 +1,33 @@
+[debug] [2020-09-24T21:34:37.897Z] ----------------------------------------------------------------------
+[debug] [2020-09-24T21:34:37.899Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-09-24T21:34:37.899Z] CLI Version:   7.0.0
+[debug] [2020-09-24T21:34:37.899Z] Platform:      darwin
+[debug] [2020-09-24T21:34:37.899Z] Node Version:  v14.5.0
+[debug] [2020-09-24T21:34:37.900Z] Time:          Thu Sep 24 2020 17:34:37 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-09-24T21:34:37.900Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-09-24T21:34:37.908Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-24T21:34:37.908Z] > authorizing via signed-in user
+[debug] [2020-09-24T21:34:37.908Z] [iam] checking project superchat-52283 for permissions ["firebase.projects.get"]
+[debug] [2020-09-24T21:34:37.909Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-09-24T21:34:37.910Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-09-24T21:34:38.312Z] <<< HTTP RESPONSE 200
+[debug] [2020-09-24T21:34:38.351Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/superchat-52283:testIamPermissions  
+
+[debug] [2020-09-24T21:34:39.510Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "14"
+[debug] [2020-09-24T21:34:39.517Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/superchat-52283  
+ 
+[debug] [2020-09-24T21:34:40.027Z] <<< HTTP RESPONSE 200
+[debug] [2020-09-24T21:34:40.028Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/880205379505:getServerAppConfig  
+ 
+[debug] [2020-09-24T21:34:40.445Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-09-24T21:34:40.449Z] [functions] Watching "/Users/amir/Documents/Codes/web/React/react-sandbox/superchat/functions" for Cloud Functions...
+[debug] [2020-09-24T21:34:40.651Z] DEBUG: Functions runtime initialized.
+[debug] [2020-09-24T21:34:40.651Z] DEBUG: Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[info] >  (node:29335) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+[info] >  (Use `node --trace-warnings ...` to show where the warning was created)
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory.
+[debug] [2020-09-24T21:34:40.656Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
